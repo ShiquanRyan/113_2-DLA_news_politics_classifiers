@@ -1,0 +1,8 @@
+{
+  "politics_title_model": "./politics_title_model",
+  "politics_combined_model": "./politics_combined_model",
+  "chinese_title_best_fold": 0,
+  "chinese_combined_best_fold": 3,
+  "chinese_title_model": "./chinese_bert_title_fold_0_best",
+  "chinese_combined_model": "./chinese_bert_combined_fold_3_best"
+}
