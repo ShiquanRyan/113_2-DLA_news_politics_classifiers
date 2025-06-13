@@ -66,6 +66,7 @@ The total loss combines:
 
 ```python
 L_total = α * L_KD + (1 - α) * L_CE
+```python
 
 ## 🧪 Experiments
 
