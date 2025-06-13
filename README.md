@@ -66,3 +66,28 @@ The total loss combines:
 
 ```python
 L_total = α * L_KD + (1 - α) * L_CE
+
+## 🧪 Experiments
+
+- **Cross-validation**: 5-fold  
+- **Frameworks**: PyTorch + HuggingFace  
+- **GPU**: Kaggle P100  
+- **Optimizer**: AdamW (learning rate = 2e-5)  
+- **Batch size**: 16  
+- **Epochs**: 5  
+- **Max sequence length**: 512  
+
+### 📊 Performance (Selected)
+
+| Model           | Macro Acc | F1    | Precision | Recall |
+|-----------------|-----------|-------|-----------|--------|
+| CKIP BERT       | 0.767     | 0.755 | 0.755     | 0.756  |
+| KD-CKIP (Soft)  | 0.751     | 0.743 | 0.738     | 0.754  |
+
+> ⚠️ Although soft-label knowledge distillation yielded competitive results, it did not surpass direct fine-tuning.
+
+---
+
+## 📌 Key Insight
+
+Soft-label distillation allows transfer of nuanced ideological bias detection from **English political models** to **Chinese-language models**, but **semantic drift from translation** may still limit its effectiveness.
