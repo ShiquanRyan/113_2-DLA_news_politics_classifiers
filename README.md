@@ -65,8 +65,8 @@ The total loss combines:
 - **Cross-Entropy Loss** from ground-truth labels
 
 ```python
-L_total = α * L_KD + (1 - α) * L_CE
-```python
+L_total = α * L_KD + (1 - α) * L_CE  
+```
 
 ## 🧪 Experiments
 
